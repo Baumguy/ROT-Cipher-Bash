@@ -1,0 +1,7 @@
+
+#!/bin/bash
+read -p "Plaintext: " plaintext
+
+ciphertext=$(echo $plaintext | tr '[a-z]' '[zyxwvutsrqponmlkjihgfedcba]' | tr '[A-Z]' '[ZYXWVUTSRQPONMLKJIHGFEDCBA]')
+
+echo "Ciphertext: $ciphertext"
